@@ -1,0 +1,22 @@
+[project]
+name = "ipi-2026-m2-il-maj-ia-python-data-agentic-rag"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nicolas METIVIER",email = "nicolas.a.metivier@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "nltk (>=3.9.4,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ipi_2026_m2_il_maj_ia_python_data_agentic_rag", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "ipi_2026_m2_il_maj_ia_python_data_agentic_rag.main:main"
