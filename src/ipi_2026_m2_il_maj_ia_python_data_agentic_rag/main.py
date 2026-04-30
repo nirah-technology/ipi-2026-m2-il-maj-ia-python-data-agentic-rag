@@ -15,7 +15,7 @@ def main():
 
     # POS Tagging -> Reconnaissance gramaticale
     nltk.download('averaged_perceptron_tagger')
-    nltk.download('averaged_perceptron_tagger_eng')
+    nltk.download('averaged_perceptron_tagger_fr')
 
     # Liste des mots qui existent dans le monde.
     nltk.download('wordnet')
@@ -37,7 +37,8 @@ def main():
     print(len(filtered_text))
     print(filtered_text)
 
-
     # Analyse Morphologique -> POS Tagging
     tags = nltk.pos_tag(tokens)
     print(tags)
+
+    
